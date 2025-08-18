@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="~/css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <h2>Dashboard</h2>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#" class="active">
+                        <i class="icon">📊</i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon">📈</i>
+                        <span>Analytics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon">🛒</i>
+                        <span>Sales</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon">📦</i>
+                        <span>Inventory</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon">👥</i>
+                        <span>Users</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon">⚙️</i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="theme-toggle">
+                <span>Dark Mode</span>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button>🔍</button>
+                </div>
+                <div class="user-profile">
+                    <span class="notification">🔔<span class="badge">3</span></span>
+                    <img src="https://via.placeholder.com/40" alt="User">
+                    <span>John Doe</span>
+                </div>
+            </div>
+
+            <div class="content">
+                <h1>Dashboard Overview</h1>
+
+                <!-- Stats Cards -->
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-info">
+                            <h3>Total Revenue</h3>
+                            <h2>$24,780</h2>
+                            <p>+12% from last month</p>
+                        </div>
+                        <div class="card-icon">
+                            <span>💰</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-info">
+                            <h3>New Users</h3>
+                            <h2>1,245</h2>
+                            <p>+8.5% from last month</p>
+                        </div>
+                        <div class="card-icon">
+                            <span>👥</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-info">
+                            <h3>Orders</h3>
+                            <h2>845</h2>
+                            <p>+5.2% from last month</p>
+                        </div>
+                        <div class="card-icon">
+                            <span>🛒</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-info">
+                            <h3>Conversion Rate</h3>
+                            <h2>3.6%</h2>
+                            <p>+0.8% from last month</p>
+                        </div>
+                        <div class="card-icon">
+                            <span>📊</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts -->
+                <div class="charts">
+                    <div class="chart-container">
+                        <canvas id="salesChart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="trafficChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Recent Orders Table -->
+                <div class="recent-orders">
+                    <h2>Recent Orders</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Customer</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Data will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/js/dashboard.js"></script>
+</body>
+</html>
