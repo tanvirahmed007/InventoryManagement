@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "b8dbDjRrF1yP9MLq8CZBvlm0431GoYkBr5xESqwsyDo=",
+  "Hash": "5c9uCfDT5FBE70xdzhxGoHuE7H7Z/ZFn9gZ+GJOgF7s=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -157,8 +157,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "z7bzp09h6i",
-      "Integrity": "cVPu4ZsTdtOC1E3ci35RJVlNRSDxdGAWXd0qPyJ/rDw=",
+      "Fingerprint": "3cx6gf8vmr",
+      "Integrity": "vSWNGBLiVHWMNAk3w4c6YtOoIp783FitUiWKjkmaf90=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\dashboard.js"
@@ -1712,6 +1712,51 @@
       ]
     },
     {
+      "Route": "js/dashboard.3cx6gf8vmr.js",
+      "AssetFile": "C:\\Users\\Hp EliteBooK 840 G8\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\js\\dashboard.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5808"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vSWNGBLiVHWMNAk3w4c6YtOoIp783FitUiWKjkmaf90=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 07:14:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3cx6gf8vmr"
+        },
+        {
+          "Name": "label",
+          "Value": "js/dashboard.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vSWNGBLiVHWMNAk3w4c6YtOoIp783FitUiWKjkmaf90="
+        }
+      ]
+    },
+    {
       "Route": "js/dashboard.js",
       "AssetFile": "C:\\Users\\Hp EliteBooK 840 G8\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\js\\dashboard.js",
       "Selectors": [],
@@ -1722,7 +1767,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5764"
+          "Value": "5808"
         },
         {
           "Name": "Content-Type",
@@ -1730,11 +1775,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cVPu4ZsTdtOC1E3ci35RJVlNRSDxdGAWXd0qPyJ/rDw=\""
+          "Value": "\"vSWNGBLiVHWMNAk3w4c6YtOoIp783FitUiWKjkmaf90=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 08:56:52 GMT"
+          "Value": "Tue, 19 Aug 2025 07:14:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1744,52 +1789,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-cVPu4ZsTdtOC1E3ci35RJVlNRSDxdGAWXd0qPyJ/rDw="
-        }
-      ]
-    },
-    {
-      "Route": "js/dashboard.z7bzp09h6i.js",
-      "AssetFile": "C:\\Users\\Hp EliteBooK 840 G8\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\js\\dashboard.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5764"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"cVPu4ZsTdtOC1E3ci35RJVlNRSDxdGAWXd0qPyJ/rDw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 08:56:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "z7bzp09h6i"
-        },
-        {
-          "Name": "label",
-          "Value": "js/dashboard.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-cVPu4ZsTdtOC1E3ci35RJVlNRSDxdGAWXd0qPyJ/rDw="
+          "Value": "sha256-vSWNGBLiVHWMNAk3w4c6YtOoIp783FitUiWKjkmaf90="
         }
       ]
     },
@@ -6572,7 +6572,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 08:56:14 GMT"
+          "Value": "Tue, 19 Aug 2025 09:08:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6609,7 +6609,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 08:56:14 GMT"
+          "Value": "Tue, 19 Aug 2025 09:08:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6646,7 +6646,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 08:56:14 GMT"
+          "Value": "Tue, 19 Aug 2025 09:08:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6691,7 +6691,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 08:56:14 GMT"
+          "Value": "Tue, 19 Aug 2025 09:08:41 GMT"
         },
         {
           "Name": "Cache-Control",

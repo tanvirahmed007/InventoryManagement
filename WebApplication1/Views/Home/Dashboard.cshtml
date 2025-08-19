@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using WebApplication1.Models;
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -135,21 +138,60 @@
                 <!-- Recent Orders Table -->
                 <div class="recent-orders">
                     <h2>Recent Orders</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Order ID</th>
-                                <th>Customer</th>
-                                <th>Date</th>
-                                <th>Amount</th>
-                                <th>Status</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- Data will be populated by JavaScript -->
-                        </tbody>
-                    </table>
+                    <form action="/Home/Dashboard" method="post">
+                        @{
+                            <input type="text" name="txtName" id="srchTxt" placeholder="Search" />
+                            <input type="submit" value="Search" />
+                            List<BaseEquipment> baseEquipment = (List<BaseEquipment>)ViewBag.listBase;
+
+                        <table>
+                            <thead>
+
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Customer</th>
+                                    <th>Date</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Data will be populated by JavaScript -->
+                                @foreach (BaseEquipment equipment in baseEquipment)
+                                {
+                                    if (ViewBag.txtName != "")
+                                    {
+                                        if (equipment.Name == ViewBag.txtName)
+                                        {
+                                            <tr>
+                                                <td>@equipment.orderID</td>
+                                                <td>@equipment.Name</td>
+                                                <td>@equipment.Date.ToString("MM/dd/yyyy")</td>
+                                                <td>@equipment.amount</td>
+                                                <td>@equipment.status</td>
+
+                                            </tr>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <tr>
+                                            <td>@equipment.orderID</td>
+                                            <td>@equipment.Name</td>
+                                            <td>@equipment.Date.ToString("MM/dd/yyyy")</td>
+                                            <td>@equipment.amount</td>
+                                            <td>@equipment.status</td>
+
+                                        </tr>
+                                    }
+                                   
+                                }
+                            </tbody>
+                        </table>
+
+                    }
+                    </form>
                 </div>
             </div>
         </div>

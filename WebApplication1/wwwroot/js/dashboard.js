@@ -109,33 +109,33 @@
     );
 
     // Sample data for recent orders table
-    const orders = [
-        { id: '#1234', customer: 'John Smith', date: '2023-05-15', amount: '$125.00', status: 'completed' },
-        { id: '#1235', customer: 'Sarah Johnson', date: '2023-05-14', amount: '$89.50', status: 'pending' },
-        { id: '#1236', customer: 'Michael Brown', date: '2023-05-14', amount: '$235.75', status: 'completed' },
-        { id: '#1237', customer: 'Emily Davis', date: '2023-05-13', amount: '$65.20', status: 'completed' },
-        { id: '#1238', customer: 'Robert Wilson', date: '2023-05-12', amount: '$154.00', status: 'failed' },
-        { id: '#1239', customer: 'Jennifer Lee', date: '2023-05-11', amount: '$210.50', status: 'completed' },
-        { id: '#1240', customer: 'David Miller', date: '2023-05-10', amount: '$99.99', status: 'pending' }
-    ];
+    //const orders = [
+    //    { id: '#1234', customer: 'John Smith', date: '2023-05-15', amount: '$125.00', status: 'completed' },
+    //    { id: '#1235', customer: 'Sarah Johnson', date: '2023-05-14', amount: '$89.50', status: 'pending' },
+    //    { id: '#1236', customer: 'Michael Brown', date: '2023-05-14', amount: '$235.75', status: 'completed' },
+    //    { id: '#1237', customer: 'Emily Davis', date: '2023-05-13', amount: '$65.20', status: 'completed' },
+    //    { id: '#1238', customer: 'Robert Wilson', date: '2023-05-12', amount: '$154.00', status: 'failed' },
+    //    { id: '#1239', customer: 'Jennifer Lee', date: '2023-05-11', amount: '$210.50', status: 'completed' },
+    //    { id: '#1240', customer: 'David Miller', date: '2023-05-10', amount: '$99.99', status: 'pending' }
+    //];
 
     // Populate orders table
-    const tableBody = document.querySelector('table tbody');
+    //const tableBody = document.querySelector('table tbody');
 
-    orders.forEach(order => {
-        const row = document.createElement('tr');
+    //orders.forEach(order => {
+    //    const row = document.createElement('tr');
 
-        row.innerHTML = `
-            <td>${order.id}</td>
-            <td>${order.customer}</td>
-            <td>${order.date}</td>
-            <td>${order.amount}</td>
-            <td><span class="status ${order.status}">${order.status.charAt(0).toUpperCase() + order.status.slice(1)}</span></td>
-            <td><button class="action-btn">View</button></td>
-        `;
+    //    row.innerHTML = `
+    //        <td>${order.id}</td>
+    //        <td>${order.customer}</td>
+    //        <td>${order.date}</td>
+    //        <td>${order.amount}</td>
+    //        <td><span class="status ${order.status}">${order.status.charAt(0).toUpperCase() + order.status.slice(1)}</span></td>
+    //        <td><button class="action-btn">View</button></td>
+    //    `;
 
-        tableBody.appendChild(row);
-    });
+    //    tableBody.appendChild(row);
+    //});
 
     // Mobile menu toggle (for small screens)
     const menuToggle = document.createElement('button');

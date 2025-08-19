@@ -25,6 +25,17 @@ public class HomeController : Controller
 
     public IActionResult Dashboard()
     {
+        List<BaseEquipment> listBase = BaseEquipment.GetBaseEquipment();
+        ViewBag.listBase = listBase;
+        ViewBag.txtName = "";
+        return View();
+    }
+    [HttpPost]
+    public IActionResult Dashboard(string txtName)
+    {
+        List<BaseEquipment> listBase = BaseEquipment.GetBaseEquipment();
+        ViewBag.listBase = listBase;
+        ViewBag.txtName = txtName;
         return View();
     }
 

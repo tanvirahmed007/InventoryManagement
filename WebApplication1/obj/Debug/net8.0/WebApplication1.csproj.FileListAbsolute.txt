@@ -32,3 +32,4 @@ C:\Users\Hp EliteBooK 840 G8\source\repos\WebApplication1\WebApplication1\obj\De
 C:\Users\Hp EliteBooK 840 G8\source\repos\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.pdb
 C:\Users\Hp EliteBooK 840 G8\source\repos\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.genruntimeconfig.cache
 C:\Users\Hp EliteBooK 840 G8\source\repos\WebApplication1\WebApplication1\obj\Debug\net8.0\ref\WebApplication1.dll
+C:\Users\Hp EliteBooK 840 G8\source\repos\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.sourcelink.json
