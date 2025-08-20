@@ -74,7 +74,13 @@
                 <div class="user-profile">
                     <span class="notification">🔔<span class="badge">3</span></span>
                     <img src="https://via.placeholder.com/40" alt="User">
-                    <span>John Doe</span>
+
+                    <span>HttpContext.Session.GetString("User")</span>
+                    @using (Html.BeginForm("Logout", "Account", FormMethod.Post))
+                    {
+                        <input type="submit" class="button" name="btnSubmit" id="btnLogout" value="Logout" />
+
+                    }
                 </div>
             </div>
 
@@ -141,7 +147,7 @@
                     <form action="/Home/Dashboard" method="post">
                         @{
                             <input type="text" name="txtName" id="srchTxt" placeholder="Search" />
-                            <input type="submit" value="Search" />
+                            <input type="submit" value="Search" name="btnSearch" />
                             List<BaseEquipment> baseEquipment = (List<BaseEquipment>)ViewBag.listBase;
 
                         <table>

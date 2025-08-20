@@ -16,49 +16,60 @@
 
         public static List<BaseEquipment> GetBaseEquipment()
         {
-            BaseEquipment baseEquipment = new BaseEquipment();
+            //BaseEquipment baseEquipment = new BaseEquipment();
             List<BaseEquipment> list = new List<BaseEquipment>();
 
-            baseEquipment = new BaseEquipment();
-            baseEquipment.orderID = 0;
-            baseEquipment.Name = "Base Equipment";
-            baseEquipment.Date = DateTime.Now;
-            baseEquipment.amount = 1000.00M;
-            baseEquipment.status = "Available";
-            list.Add(baseEquipment);
+            //baseEquipment = new BaseEquipment();
+            //baseEquipment.orderID = 0;
+            //baseEquipment.Name = "Base Equipment";
+            //baseEquipment.Date = DateTime.Now;
+            //baseEquipment.amount = 1000.00M;
+            //baseEquipment.status = "Available";
+            //list.Add(baseEquipment);
 
-            baseEquipment = new BaseEquipment();
-            baseEquipment.orderID = 1;
-            baseEquipment.Name = "Advanced Equipment";
-            baseEquipment.Date = DateTime.Now;
-            baseEquipment.amount = 2000.00M;
-            baseEquipment.status = "Available";
-            list.Add(baseEquipment);
+            //baseEquipment = new BaseEquipment();
+            //baseEquipment.orderID = 1;
+            //baseEquipment.Name = "Advanced Equipment";
+            //baseEquipment.Date = DateTime.Now;
+            //baseEquipment.amount = 2000.00M;
+            //baseEquipment.status = "Available";
+            //list.Add(baseEquipment);
 
-            baseEquipment = new BaseEquipment();
-            baseEquipment.orderID = 2;
-            baseEquipment.Name = "Premium Equipment";
-            baseEquipment.Date = DateTime.Now;
-            baseEquipment.amount = 3000.00M;
-            baseEquipment.status = "Pending";
-            list.Add(baseEquipment);
+            //baseEquipment = new BaseEquipment();
+            //baseEquipment.orderID = 2;
+            //baseEquipment.Name = "Premium Equipment";
+            //baseEquipment.Date = DateTime.Now;
+            //baseEquipment.amount = 3000.00M;
+            //baseEquipment.status = "Pending";
+            //list.Add(baseEquipment);
 
 
-            baseEquipment = new BaseEquipment();
-            baseEquipment.orderID = 3;
-            baseEquipment.Name = "Luxury Equipment";
-            baseEquipment.Date = DateTime.Now;
-            baseEquipment.amount = 5000.00M;
-            baseEquipment.status = "Unavailable";
-            list.Add(baseEquipment);
+            //baseEquipment = new BaseEquipment();
+            //baseEquipment.orderID = 3;
+            //baseEquipment.Name = "Luxury Equipment";
+            //baseEquipment.Date = DateTime.Now;
+            //baseEquipment.amount = 5000.00M;
+            //baseEquipment.status = "Unavailable";
+            //list.Add(baseEquipment);
 
-            baseEquipment = new BaseEquipment();
-            baseEquipment.orderID = 4;
-            baseEquipment.Name = "Custom Equipment";
-            baseEquipment.Date = DateTime.Now;
-            baseEquipment.amount = 10000.00M;
-            baseEquipment.status = "Available";
-            list.Add(baseEquipment);
+            //baseEquipment = new BaseEquipment();
+            //baseEquipment.orderID = 4;
+            //baseEquipment.Name = "Custom Equipment";
+            //baseEquipment.Date = DateTime.Now;
+            //baseEquipment.amount = 10000.00M;
+            //baseEquipment.status = "Available";
+            //list.Add(baseEquipment);
+
+            for(int i = 0; i < 50; i++)
+            {
+                BaseEquipment baseEquipment = new BaseEquipment();
+                baseEquipment.orderID = i;
+                baseEquipment.Name = "Base Equipment " + (i + 1);
+                baseEquipment.Date = DateTime.Now;
+                baseEquipment.amount = (i + 1) * 1000.00M;
+                baseEquipment.status = (i % 2 == 0) ? "Available" : "Unavailable";
+                list.Add(baseEquipment);
+            }
 
             return list;
 
