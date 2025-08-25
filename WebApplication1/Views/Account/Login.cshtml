@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@model WebApplication1.Models.BaseAccount;
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
 <!-- Coding By CodingNepal - codingnepalweb.com -->
 <html lang="en">
 <head>
@@ -7,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login & Registration Form</title>
     <!---Custom CSS File--->
-    @* <link href="./css/style.css" rel="stylesheet" /> *@
+    <link href="./css/style.css" rel="stylesheet" /> 
 
 
 
@@ -21,10 +27,12 @@
             <div class="login form">
                 <header>Login</header>
                 <form action="#">
-                    <input type="text" name="txtEmail" placeholder="Enter your email">
-                    <input type="password" name="txtPass" placeholder="Enter your password">
+                    @Html.TextBoxFor(model => model.Username, new { @placeholder = "Enter your email", @class = "form-control" })
+                    @* <input type="text" name="txtEmail" placeholder="Enter your email">
+                    <input type="password" name="txtPass" placeholder="Enter your password"> *@
+                    @Html.TextBoxFor(model => model.Password, new { @placeholder = "Enter your password", @class = "form-control" })
                     @* <a href="#" id="btnForgetPassword" name="btnForgetPassword" value="Forgot password?">Forgot password?</a> *@
-                    <input style="color:aliceblue" type="submit" class="" id="btnForgetPassword" name="btnSubmit" value="Forgot password?" />
+                    <input type="submit" class="" id="btnForgetPassword" name="btnSubmit" value="Forgot password?" />
 
                     <input type="submit" id="btnLogin" name="btnSubmit" class="button" value="Login">
                 </form>

@@ -1,9 +1,15 @@
+using WebApplication1.Controllers;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddSession();
+builder.Services.AddScoped<AccountController>();
 
 // Register Session service
 builder.Services.AddDistributedMemoryCache(); // for storing session in memory
